@@ -1,0 +1,168 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav {
+
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-part2 {
+    display: flex;
+    gap: 3vw;
+    padding: 0px 2vw;
+}
+
+.nav h2 {
+    font-size: 2vw;
+    font-weight: 700;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+.nav-part2 h4 {
+    margin-top: 1vw;
+    font-size: 1.23vw;
+}
+
+.nav button{
+    font-size: 1vw;
+    padding: 1vw 1vw;
+    font-weight: 600;
+    background-color:  #20b2aa;
+    border-radius: 10px;
+    border: none;
+}
+
+.nav i {
+    font-size: 1.43vw;
+    display: none;
+    font-weight: 700;
+}
+
+.content {
+    height: calc(100% - 100px);
+    width: 100%;
+     
+    display: flex;
+    position: relative;
+}
+
+.left {
+    height: 100%;
+    width: 55%;
+   
+    padding: 4vw 4vw;
+}
+
+.left h1{
+    font-size: 3.5vw;
+     line-height: 4.5vw;
+}
+
+.left h1 span{
+    color: #20b2aa;
+}
+
+
+.left p{
+    font-size: 1.23vw;
+    width: 85%;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    font-weight: 600;
+}
+
+ .content button{
+    font-size: 1.1vw;
+    padding: 1.3vw 1.6vw;
+    font-weight: 600;
+    background-color:  #20b2aa;
+    border-radius: 100px;
+    border: none;
+}
+
+
+.right {
+
+    height: 100%;
+    width: 45%;
+    background-color: #20b2aa;
+
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+
+@media (max-width:600px) {
+    .nav {
+        background-color: #20b2aa;
+        color: white;
+        height: 70px;
+    }
+
+    .nav h2 {
+        font-size: 5vw;
+    }
+
+    .nav-part2 h4 {
+        font-size: 4vw;
+        display: none;
+    }
+
+    .nav i {
+        display: block;
+        font-size: 6vw;
+    }
+    .nav button{
+        display: none;
+    }
+ 
+    .content{
+        height: calc(100% - 70px);
+        flex-direction: column;
+    }
+    .left{
+
+        width: 100%;
+        height: 50%;
+        margin-bottom: 3vw;
+    }
+    .right{
+        width: 100%;
+        height: 50%;
+    }
+    .left h1{
+        font-size: 7.5vw;
+        line-height: 10vw;
+    }
+    .left p{
+        font-size: 2vw;
+        width: 90%;
+    }
+}
