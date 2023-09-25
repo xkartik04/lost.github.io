@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-
+    text-decoration: none;
 }
 
 html,
@@ -18,18 +18,19 @@ body {
 }
 
 .nav {
-
+    margin-top: 0.10vw;
     height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 0 50px 35px black;
 }
 
 .nav-part2 {
     display: flex;
     gap: 3vw;
-    padding: 0px 2vw;
+    padding: 0px 1vw;
 }
 
 .nav h2 {
@@ -37,20 +38,42 @@ body {
     font-weight: 700;
     align-items: center;
     margin-left: 2vw;
+    font-family:  Verdana, sans-serif;
+    text-shadow: #18a8bb 0 0 15px;
 }
 
-.nav-part2 h4 {
+.nav-part2 h3 {
     margin-top: 1vw;
     font-size: 1.23vw;
+    font-weight: 600;
 }
 
-.nav button{
+.nav-part2 h3 a{
+    color: black;
+    font-family:  Verdana, sans-serif;
+}
+
+.nav-part2 h3 a:hover {
+    border-radius: 10px;
+    padding: 0.3vw 0.3vw;
+    background-color: #20b2aa;
+    transition: 1s;
+}
+
+.nav button {
     font-size: 1vw;
     padding: 1vw 1vw;
     font-weight: 600;
-    background-color:  #20b2aa;
+    background-color: #20b2aa;
     border-radius: 10px;
     border: none;
+}
+
+.nav button:hover{
+    color: aliceblue;
+    background-color: black;
+    transform: matrix(1.1s);
+    transition: 1s;
 }
 
 .nav i {
@@ -62,29 +85,34 @@ body {
 .content {
     height: calc(100% - 100px);
     width: 100%;
-     
+
     display: flex;
     position: relative;
 }
 
 .left {
+    margin-top: 5vw;
     height: 100%;
     width: 55%;
-   
+
     padding: 4vw 4vw;
 }
 
-.left h1{
+.left h1 {
     font-size: 3.5vw;
-     line-height: 4.5vw;
+    line-height: 4.5vw;
 }
 
-.left h1 span{
+.left h1 span {
     color: #20b2aa;
 }
 
+.left h1 span:hover{
+    color: #b015be;
+    transition: 1.9s;
+}
 
-.left p{
+.left p {
     font-size: 1.23vw;
     width: 85%;
     margin-top: 2vw;
@@ -92,11 +120,11 @@ body {
     font-weight: 600;
 }
 
- .content button{
+.content button {
     font-size: 1.1vw;
-    padding: 1.3vw 1.6vw;
+    padding: 1.2vw 1.4vw;
     font-weight: 600;
-    background-color:  #20b2aa;
+    background-color: #20b2aa;
     border-radius: 100px;
     border: none;
 }
@@ -107,15 +135,23 @@ body {
     height: 100%;
     width: 45%;
     background-color: #20b2aa;
-
 }
 
-.right img{
+.right img {
     height: 100%;
     width: 100%;
-    
 }
 
+/* ----------------------------------------------------------------------------- */
+
+.image1 {
+    width: 50%;
+    height: 50%;
+    gap: 18vw;
+    /* overflow: hidden; */
+    display: flex;
+    position: relative;
+}
 
 
 
@@ -139,29 +175,34 @@ body {
         display: block;
         font-size: 6vw;
     }
-    .nav button{
+
+    .nav button {
         display: none;
     }
- 
-    .content{
+
+    .content {
         height: calc(100% - 70px);
         flex-direction: column;
     }
-    .left{
+
+    .left {
 
         width: 100%;
         height: 50%;
         margin-bottom: 3vw;
     }
-    .right{
+
+    .right {
         width: 100%;
         height: 50%;
     }
-    .left h1{
+
+    .left h1 {
         font-size: 7.5vw;
         line-height: 10vw;
     }
-    .left p{
+
+    .left p {
         font-size: 2vw;
         width: 90%;
     }
