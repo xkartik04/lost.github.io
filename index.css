@@ -132,9 +132,8 @@ body {
 
 .right {
 
-    height: 100%;
-    width: 45%;
-    background-color: #20b2aa;
+    height: 105%;
+    width: 35%;
 }
 
 .right img {
@@ -142,16 +141,8 @@ body {
     width: 100%;
 }
 
-/* ----------------------------------------------------------------------------- */
 
-.image1 {
-    width: 50%;
-    height: 50%;
-    gap: 18vw;
-    /* overflow: hidden; */
-    display: flex;
-    position: relative;
-}
+/* ----------------------------------------------------------------------------- */
 
 
 
