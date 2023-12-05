@@ -19,7 +19,7 @@ body {
 
 .nav {
     margin-top: 0.10vw;
-    height: 100px;
+    height: 90px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -29,8 +29,9 @@ body {
 
 .nav-part2 {
     display: flex;
-    gap: 3vw;
-    padding: 0px 1vw;
+    gap: 2.3vw;
+  
+    margin-right: 9vw;
 }
 
 .nav h2 {
@@ -131,14 +132,18 @@ body {
 
 
 .right {
-
-    height: 105%;
-    width: 35%;
+    margin-top: 3vw;
+    /* margin-left: 4vw; */
+    margin-bottom: 2vw;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .right img {
-    height: 100%;
-    width: 100%;
+    border-radius: 20px;
+     
+   
 }
 
 
@@ -169,7 +174,7 @@ body {
     }
 
     .nav button {
-        display: none;
+        display: block;
     }
 
     .content {
